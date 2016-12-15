@@ -13,7 +13,6 @@
  *= require_self
  *= require creative.css.scss
  *= require bootstrap/css/bootstrap.css
- *= require font-awesome/css/font-awesome.css
-  *= require font-awesome
+ *= require font-awesome
  *= reqiroe magnific-popup/magnific-popup.css
  */
