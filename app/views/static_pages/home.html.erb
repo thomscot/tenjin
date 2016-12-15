@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tenjin - A hopeless project</title>
+    <title>Bootstrap Resume</title>
 
     <!-- Bootstrap Core CSS -->
     <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
@@ -43,7 +43,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Tommaso Scotti</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,10 +53,10 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#experience">Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#skills">Skills</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -71,10 +71,10 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Title Goes Here</h1>
+                <h1 id="homeHeading">Thomas Scott</h1>
                 <hr>
-                <p>This is where a subtitle and a brief explanation goes</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">join</a>
+                <p>A bootstrapped visual resume</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">WHO'S THAT?</a>
             </div>
         </div>
     </header>
@@ -86,93 +86,72 @@
                     <h2 class="section-heading">Got what you need?</h2>
                     <hr class="light">
                     <p class="text-faded">PhD graduate in applied mathematics, I am now working in financial technology on the development
-of web applications. Thanks to long and diversified experiences abroad, I have become able to interact
-naturally in different languages and to manage heterogeneous groups of people. In particular, I am
-proficient in Italian, English, and Japanese.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">MORE</a>
+                                        of web applications. Thanks to long and diversified experiences abroad, I have become able to interact
+                                        naturally in different languages and to manage heterogeneous groups of people. In particular, I am
+                                        proficient in Italian, English, and Japanese.</p>
+                    <a href="#skills" class="page-scroll btn btn-default btn-xl sr-button">SO WHAT?</a>
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="experience">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <%= image_tag("portfolio/thumbnails/1.jpg", alt: "main logo", :class  => "img-responsive") %>
+                <div class="col-lg-6 col-sm-6">
+                    <a href="http://www.sbibits.com" class="portfolio-box" target= '_blank'>
+                        <%= image_tag("logobits.png", alt: "", :class  => "img-responsive ")  %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
+                                    A Fast Growing Fintech Company
                                 </div>
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                    <div class="service-box">
-                        <h3>SBI BITS</h3>
-                        <p class="text-muted">Jr Developer</p>
+                    <div style="padding-left:25px;">
+                        <i class="fa fa-2x fa-laptop text-primary sr-icons"> <h3 style="display:inline-block;">Jr Developer</h3></i>
+                        <p class="text-muted">October 2015 to Present</p>
                         <ul class="fa-ul" style="display: inline-block; text-align:left;">
-                            <li><i class="fa fa-li fa-university sr-icons" aria-hidden="true"></i> Bachelor’s in Mathematics - Sapienza University - 2007</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Master’s in Mathematics - Sapienza University - 2009</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Ph.D. in Applied Mathematics - Meiji University - 2015</li>
+                            <li><i class="fa fa-li fa-laptop sr-icons" aria-hidden="true"></i> Accelerated from zero-experience to develivering views of web applications using a Java Spring MVC framework in 4 months.</li>
+                            <li><i class="fa fa-li fa-bug sr-icons" aria-hidden="true"></i> As the official bug hunters leader, I have taken care of the testing phase by writing test cases in order to find bugs.</li>
+                            <li><i class="fa fa-li fa-flag sr-icons" aria-hidden="true"></i>  Found bugs so tricky that my colleagues labeled them “Italian tricks”. </li>
+                            <li><i class="fa fa-li fa-group sr-icons" aria-hidden="true"></i> Volunteered  to organize Japanese classes to improve language my team's as well as my own skills. I have been running this class steadily twice a week since 2015/12.</li>
                         </ul>
+                        <i class="fa fa-2x fa-book text-primary sr-icons"> <h3 style="display:inline-block;">Publications</h3></i>
+                        <ol tyoe="1">
+                            <li>Scotti T., Mimura M., Wakano J.Y.: <%= link_to "Avoiding toxic prey may promote harmful algal blooms", "http://www.sciencedirect.com/science/article/pii/S1476945X14000877",  :target => "_blank" %> Ecological Complexity, Vol. 21, pp. 157-165, 2015. </li>
+                            <li>Ikeda H., Scotti T., Mimura M.: <%= link_to "Shadow system approach to a plankton model generating harmful algal bloom", "https://aimsciences.org/journals/displayArticlesnew.jsp?paperID=13387",  :target => "_blank" %> Discrete & Continuous Dynamical Systems Vol. 37 No. 2.</li>
+                        </ol>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <%= image_tag("portfolio/thumbnails/3.jpg", alt: "", :class  => "img-responsive")  %>
+                <div class="col-lg-6 col-sm-6">
+                    <a href="http://www.meiji.ac.jp/cip/english/" class="portfolio-box" target= '_blank'>
+                        <%= image_tag("logogmeiji.png", alt: "", :class  => "img-responsive") %>
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                     A Leader in Higher Education
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+
                                 </div>
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col-lg-8 col-sm-6">
-                    <div class="service-box">
-                        <h3>Meiji University</h3>
-                        <p class="text-muted">MIMS Researcher - MIMS研究員</p>
+                    <div style="padding-left:25px;">
+                        <i class="fa fa-2x fa-graduation-cap text-primary sr-icons"> <h3 style="display:inline-block;">Researcher - 研究員</h3></i>
+                        <p class="text-muted">April 2015 to March 2016</p>
                         <ul class="fa-ul" style="display: inline-block; text-align:left;">
-                            <li><i class="fa fa-li fa-university sr-icons" aria-hidden="true"></i> Bachelor’s in Mathematics - Sapienza University - 2007</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Master’s in Mathematics - Sapienza University - 2009</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Ph.D. in Applied Mathematics - Meiji University - 2015</li>
+                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Continuing my PhD research on the application of mathematical models to the study of natural phenomena.</li>
+                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Co-authored a paper analyzing the properties of the system proposed in [1] under a purely mathematical point of view:</li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="images/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <%= image_tag("portfolio/thumbnails/5.jpg", alt: "", :class  => "img-responsive")  %>
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                 <div class="col-lg-8 col-sm-6">
-                    <div class="service-box">
-                        <h3>Meiji University</h3>
-                        <p class="text-muted">Research Promoter - 研究推進員</p>
+                        <i class="fa fa-2x fa-graduation-cap text-primary sr-icons"> <h3 style="display:inline-block;">Research Promoter - 研究推進員</h3></i>
+                         <p class="text-muted">April 2012 to March 2015</p>
                         <ul class="fa-ul" style="display: inline-block; text-align:left;">
-                            <li><i class="fa fa-li fa-university sr-icons" aria-hidden="true"></i> Bachelor’s in Mathematics - Sapienza University - 2007</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Master’s in Mathematics - Sapienza University - 2009</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Ph.D. in Applied Mathematics - Meiji University - 2015</li>
+                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i>Deepened the knowledge of the analytical and numerical techniques used to study systems of differential equations. Focused on the application of deterministic models to: population dynamics, self-organization, spread of diseases, and so on.</li>
+                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Spoke at several international conferences (full list below) both in Japan and abroad</li>
+                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Published original results on peer-reviewed international scientific journals </li>
                         </ul>
                     </div>
                 </div>
@@ -181,7 +160,7 @@ proficient in Italian, English, and Japanese.</p>
     </section>
     
 
-    <section id="services">
+    <section id="skills">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -190,24 +169,32 @@ proficient in Italian, English, and Japanese.</p>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!--<div class="container">-->
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
                         <h3>Skills</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <p class="text-muted"></p>
+                        <ul class="fa-ul" style="display: inline-block; text-align:left;">
+                            <li><i class="fa fa-li fa-desktop sr-icons" aria-hidden="true"></i> <p> OS: <i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> (basic) </p></li>
+                            <li><i class="fa fa-li fa-cog fa-spin sr-icons" aria-hidden="true"></i><p> Experience with Java Spring MVC </p></li>
+                            <li><i class="fa fa-li fa-chrome sr-icons" aria-hidden="true"></i> <p> Web: <i class="fa fa-html5" aria-hidden="true"></i> <i class="fa fa-css3" aria-hidden="true"></i>...bootstrap!</p></li>
+                            <li><i class="fa fa-li fa-database sr-icons" aria-hidden="true"></i>  <p>Some experience with PostgreSQL</p></li>
+                            <li><i class="fa fa-li fa-pulse fa-spinner sr-icons" aria-hidden="true"></i> <p>Python, C#, Ruby on Rails </p> </li>
+                            <li><i class="fa fa-li fa-language sr-icons" aria-hidden="true"></i> <p> Italian (native) <br> English (fluent) <br> Japanese (Advanced) <br> Chinese (Conversational) </p> </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-graduation-cap text-primary sr-icons"></i>
                         <h3>Education</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <p class="text-muted"></p>
                         <ul class="fa-ul" style="display: inline-block; text-align:left;">
-                            <li><i class="fa fa-li fa-university sr-icons" aria-hidden="true"></i> Bachelor’s in Mathematics - Sapienza University - 2007</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Master’s in Mathematics - Sapienza University - 2009</li>
-                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Ph.D. in Applied Mathematics - Meiji University - 2015</li>
+                            <li><i class="fa fa-li fa-university sr-icons" aria-hidden="true"></i> <p>Bachelor’s in Mathematics <br> Sapienza University - 2007</p></li>
+                            <li><i class="fa fa-li fa-certificate sr-icons" aria-hidden="true"></i> <p>Master’s in Mathematics <br> Sapienza University - 2007</p></li>
+                            <li><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> <p>Ph.D. in Applied Mathematics <br> Meiji University - 2015</p></li>
                         </ul>
                     </div>
                 </div>
@@ -215,23 +202,32 @@ proficient in Italian, English, and Japanese.</p>
                     <div class="service-box">
                         <i class="fa fa-4x fa-trophy text-primary sr-icons"></i>
                         <h3>Achievements</h3>
-                        <p class="text-muted">Text here?</p>
+                        <p class="text-muted"></p>
                         <ul class="fa-ul" style="display: inline-block; text-align:left;">
-                            <li><i class="fa fa-li fa-language" aria-hidden="true"></i>certifications: English: TOEFL (111/120); Japanese: JLPT (N2)</li>
-                            <li><i class="fa fa-li fa-usd sr-icons" aria-hidden="true"></i> Scholarships: ERASMUS (2008); MEXT (2011); GCOE (2012)</li>
-                            <li><i class="fa fa-li fa-trophy sr-icons" aria-hidden="true"></i>Best poster award at ICMMA13, Meiji University, 2013</li>
+                            <li><i class="fa fa-li fa-language" aria-hidden="true"></i> <p>Language Certifications: <br>English: TOEFL 111/120 <br> Japanese: JLPT N2</p></li>
+                            <li><i class="fa fa-li fa-usd sr-icons" aria-hidden="true"></i> <p> Scholarships: <br> ERASMUS 2008 <br> MEXT 2011 <br> GCOE 2012</p></li>
+                            <li><i class="fa fa-li fa-trophy sr-icons" aria-hidden="true"></i><p> Best poster award at ICMMA13 <br> Meiji University 2013</p></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-heart text-primary"></i>
                         <h3>Passion</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <p class="text-muted"></p>
+                        <ul class="fa-ul"  style="display: inline-block; text-align:left;">
+                            <li><i class="fa fa-li fa-music" aria-hidden="true"></i><p>I love music in general and I have <br> been studying piano for more than 10 years.</p></li>
+                            <li><i class="fa fa-li fa-hand-rock-o" aria-hidden="true"></i><p>I have been practicing martial arts since 1999.</p></li>
+                            <li><i class="fa fa-li fa-book" aria-hidden="true"></i><p>Big fan of the <%= link_to "edX", "https://www.edx.org/",  :target => "_blank" %> platform. </p></li> 
+                            <li><i class="fa fa-li fa-stack-exchange" aria-hidden="true"></i><p> Do my best to contribute on <%= link_to "stack exchange", "http://stackexchange.com/",  :target => "_blank" %>, especially for the Japanese language.</p></li>
+                            <li><i class="fa fa-li fa-paint-brush" aria-hidden="true"></i><p>Enthusiast about calligraphy,
+                                snowboard <i class="fa fa-snowflake-o" aria-hidden="true"></i>,
+                                and traveling. <i class="fa fa-paper-plane" aria-hidden="true"></i></p></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        <!--</div>-->
     </section>
 
     
@@ -239,7 +235,7 @@ proficient in Italian, English, and Japanese.</p>
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
+                <h2>Want a (Lame) PDF of my Resume?</h2>
                 <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
             </div>
         </div>
@@ -251,7 +247,7 @@ proficient in Italian, English, and Japanese.</p>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Let's Get In Touch!</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    <p>Liked what you've seen? Awesome! Give me a call or send me an email!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
@@ -259,7 +255,7 @@ proficient in Italian, English, and Japanese.</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <p><a href="mailto:your-email@your-domain.com">email@myemail.com</a></p>
                 </div>
             </div>
         </div>
@@ -275,8 +271,10 @@ proficient in Italian, English, and Japanese.</p>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <%= javascript_include_tag "scrollreveal.min.js" %>
+    
+    
     <!--<script src="vendor/scrollreveal/scrollreveal.min.js"></script>-->
-    <%= javascript_include_tag "jquery.magnific-popup.min.js" %>
+    <!--< %= javascript_include_tag "jquery.magnific-popup.min.js" %>-->
     <!--<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>-->
 
     <!-- Theme JavaScript -->
