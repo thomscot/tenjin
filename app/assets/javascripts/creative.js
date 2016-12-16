@@ -60,5 +60,11 @@
             tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
         }
     });
+    
+     $(function () {
+            $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
+                    $('.navbar-toggle:visible').click();
+            });
+    });
 
 })(jQuery); // End of use strict

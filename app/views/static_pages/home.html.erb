@@ -279,7 +279,15 @@
     <!-- Theme JavaScript -->
     <!--<script src="js/creative.min.js"></script>-->
     <%= javascript_include_tag "creative.min.js" %>
+    
+    <!-- Quick fix to close the menu on click/tap on mobile etc -->
+    <script>
+        $(document).on('click',function(){
+            $('.collapse').collapse('hide');
+        })
+    </script> 
 
 </body>
+
 
 </html>
