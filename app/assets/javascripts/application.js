@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap.min  
 //= require bootstrap.js
 //= require scrollreveal.js
 //= require creative.js
