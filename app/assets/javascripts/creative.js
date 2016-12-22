@@ -9,11 +9,25 @@
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
-
+    
+    // Original code to highlight topbar on scroll, somehow not working
     // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
+    // $('body').scrollspy({
+    //     target: '.navbar-fixed-top',
+    //     offset: 51
+    // });
+    
+    // This makes the navbar backround color transparent when the page is loading
+    // Somehow I cannot make it work in css (either background is white in the beginning, or does not become transparent on scrolling)
+    $(document).ready(function(){       
+     $('.navbar').css('background-color', 'transparent');
+    });
+    
+    // This makes the background of the navbar become white gradually on scrolldown
+    // Maginc number 500 is the divider for the scrollTop, the lower the number the faster the opacity goes above 1
+    $(document).on('scroll', function (e) {
+        var alpha = $(document).scrollTop() / 500;
+        $('.navbar').css('background-color', 'rgba(255,255,255,' + alpha + ')');
     });
 
     // Closes the Responsive Menu on Menu Item Click
@@ -68,5 +82,6 @@
                     $('.navbar-toggle:visible').click();
             });
     });
+
 
 })(jQuery); // End of use strict
