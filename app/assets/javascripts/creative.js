@@ -19,17 +19,19 @@
     
     // This makes the navbar backround color transparent when the page is loading
     // Somehow I cannot make it work in css (either background is white in the beginning, or does not become transparent on scrolling)
-    $(document).ready(function(){       
-     $('.navbar').css('background-color', 'transparent');
-    });
+    // I removed this on mibile/small screens
+    if  (!($(window).width() < 480) || !($(window).height() < 480)) {
+        $(document).ready(function(){  
+            $('.navbar').css('background-color', 'transparent');
+        });
+        // This makes the background of the navbar become white gradually on scrolldown
+        // Maginc number 500 is the divider for the scrollTop, the lower the number the faster the opacity goes above 1
+        $(document).on('scroll', function (e) {
+            var alpha = $(document).scrollTop() / 500;
+            $('.navbar').css('background-color', 'rgba(255,255,255,' + alpha + ')');
+            });
+    }
     
-    // This makes the background of the navbar become white gradually on scrolldown
-    // Maginc number 500 is the divider for the scrollTop, the lower the number the faster the opacity goes above 1
-    $(document).on('scroll', function (e) {
-        var alpha = $(document).scrollTop() / 500;
-        $('.navbar').css('background-color', 'rgba(255,255,255,' + alpha + ')');
-    });
-
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();
