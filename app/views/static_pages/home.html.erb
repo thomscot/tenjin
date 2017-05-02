@@ -73,24 +73,62 @@
             <div class="header-content-inner">
                 <i class="hidden-xs hidden-xs" style="color:#FFFFFF; opacity:1; font-size:150%; font-family: raleway">Hey, I'm</i>
                 <h1 id="homeHeading" class="hidden-xs hidden-xs" style="width: 100%; font-family: raleway; "><hr class="hidden-xs hidden-xs" style='display:inline-block; width:100px; margin: 15px' /> Tommy <hr class="hidden-xs hidden-xs" style='display:inline-block; width:100px; margin: 15px' /></h1>
+                <i class="hidden-xs hidden-xs" style="color:#FFFFFF; opacity:1; font-size:150%; font-family: raleway">. . .and I'm not a web developer</i>
                 <p class="hidden-xs hidden-xs"></p>
                 <!--<p  style="color:#F05F40; opacity:0.75;">A Bootstrapped Resume</p>-->
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">... who ?</a>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll"> Find out More </a>
             </div>
         </div>
     </header>
 
     <section class="bg-primary" id="about">
-        <div class="container">
+        <div  class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Briefly</h2>
+                <div  class="col-lg-12 text-center">
+                    <h2 class="section-heading">My story in short... kind of</h2>
                     <hr class="light">
-                    <p class="text-faded">PhD graduate in applied mathematics, I am now working in financial technology on the development
-                                        of web applications. Thanks to long and diversified experiences abroad, I have become able to interact
-                                        naturally in different languages and to manage heterogeneous groups of people. In particular, I am
-                                        proficient in Italian, English, and Japanese.</p>
-                    <a href="#experience" class="page-scroll btn btn-default btn-xl sr-button">TELL ME MORE</a>
+                    <p  class="text-faded" style="text-align: justify;">Born and raised in Rome, I spent the first 20 years of my life 
+                    in the Eternal City split among my passion for music and sports and my mom breathing down my neck so that I'd keep a
+                    good average at school. In the summer of 2007 I had the chance to visit a friend who was studying in Spain and I
+                    learned that the word "study" in "study abroad" has a very broad definition. At that time, I was towards the end
+                    of my Master's in mathematics and well, I decided that I wanted to "study" abroad too. Like most of European countries 
+                    though, Spain did not suit my character. I wanted something different. So when I found out that Finland was an option, I didn't have to think for a
+                    second: what can be more different than spending a semester 200 km away from the Polar Artic Circle, with the weather ranging from 
+                    -20°C and 24 hours of darkness to +20°C and 24 hours of light? Maybe the international space station, but it was not on the list.
+                    Those six months at the University of Oulu turned out to be a great experience. I didn't just learn advanced real analysis,
+                    I learned what it means to be independent, to be on your own, and that learning a new language always pays out when,
+                    for example, the bus you're riding crushes into a car in the northern countryside and everyone around you only speaks Finnish.
+                    However, Finland was just a first step. </br></br>
+                    </p>
+                    <p id="collapsedText" class="collapse text-faded" style="text-align: justify;" aria-expanded="false" onclick="changeText()">
+                       
+                        
+                        In 2009 I got my Master's degree and, uncertain about what to do next, I decided to take a break and follow 
+                        my passion for martial arts. So with more than 10 years of practice and a baisc knowledge of mandarin Chinese in my bag,
+                        I moved to Beijing thinking it would be a walk in the park. Well it wasn't. The cultural shock was tremendous and I was on
+                        the verge of giving up and go back home more than once. But I didn't.
+                        It took a lot of struggle and effort, but from playing the piano in the ambassador's mansion 
+                        to attending a private buddhist ceremony in the house of an old Tibetan Lama in Chengdu, China turned out
+                        to be the adventure I was seeking. </br></br>
+                        The real change though happened when, during my stay in China, I went to Japan for a short trip. It was love at 
+                        first sight. After a few days of sightseeing I knew I wanted to stay there longer. So I left Beijing and decided to move 
+                        directly to Tokyo in order to try my luck and find a job in the land of the rising sun.
+                        It was the fall of 2010, I had no work experience, and could not speak Japanese at all. Saying that it 
+                        was a long shot is an understatement. Three months went by, my visa expired, and in the end I had to pack my hopes in
+                        a tired, worn-out bag and head back to Rome.
+                        However, being stubborn like a mule, far from me was the idea of giving up. I decided to try the academic way and
+                        enroll in a PhD program. Which of course wasn't easy either. It took filling kilos of papers, several exams, and
+                        basically the whole 2011 until I managed to secure two scholarships and was accepted both at Waseda and Meiji University. 
+                        I decided to go for the second, and I finally moved permanetly to Japan in March 2012. I have been in Tokyo ever since. </br></br>
+                        
+                        Not without sweat, I obtained a PhD in applied mathematics in 2015 based on research in the application of reaction-diffusion
+                        equations in mathematical biology. Shortly after I joined a fintech startup where I have been busy with several 
+                        tasks going from web-development to data analysis. What's next?
+          
+                    </p>
+                    <p><a id="readMore" aria-expanded="false" style="color:#FFFFFF; cursor:pointer;" onclick="changeText()">READ MORE...</a></p>
+                    </br>
+                    <a href="#experience"  class="page-scroll btn btn-default btn-xl sr-button">Go to Resume</a>
                 </div>
             </div>
         </div>
@@ -112,7 +150,12 @@
                     </a>
                     <div style="padding-left:25px;">
                         <i class="fa fa-2x fa-laptop text-primary sr-icons"> <h3 style="display:inline-block;">Jr Developer</h3></i>
-                        <p class="text-muted">October 2015 to Present</p>
+                        <p class="text-muted">January 2017 to Present (quant team)</p>
+                            <ul class="fa-ul" style="display: inline-block; text-align:left;">
+                            <li><i class="fa fa-li fa-bar-chart sr-icons" aria-hidden="true"></i> Running data Analysis (Python) on financial instruments to improve prop trading business.</li>
+                            <li><i class="fa fa-li fa-book sr-icons" aria-hidden="true"></i>Contributed to a small web application using the nodejs/express framework.</li>
+                        </ul>
+                        <p class="text-muted">October 2015 to December 2016 (application team)</p>
                         <ul class="fa-ul" style="display: inline-block; text-align:left;">
                             <li><i class="fa fa-li fa-laptop sr-icons" aria-hidden="true"></i> Accelerated from zero-experience to develivering views of web applications using a Java Spring MVC framework in 4 months.</li>
                             <li><i class="fa fa-li fa-bug sr-icons" aria-hidden="true"></i> As the official bug hunters leader, I have taken care of the testing phase by writing extensive test cases and scenarios.</li>
@@ -295,11 +338,34 @@
     <!--<script src="js/creative.min.js"></script>-->
     <%= javascript_include_tag "creative.min.js" %>
     
-    <!-- Quick fix to close the menu on click/tap on mobile etc -->
+    
     <script>
+        // Quick fix to close the menu on click/tap on mobile etc
         $(document).on('click',function(){
             $('.collapse').collapse('hide');
         })
+        
+        // Need to stop propagation on the section or even clicking outside the text collapse is triggered
+        // But the text in the link readMore does not change 
+        $("#about").click(function(e) { e.stopPropagation(); });
+        // Toggles expand/collapse in bio section 
+        function changeText() {
+            var element = document.getElementById('readMore');
+            //aria-expanded is the attribute that keeps track whether a section is expanded or not
+            var isExpanded = $('#collapsedText').attr("aria-expanded"); 
+            if (element.innerHTML === 'READ MORE...' && isExpanded==="false") {
+                $('#collapsedText').collapse('show');
+                element.innerHTML = 'READ LESS...';
+                
+            }
+            else {
+                $('#collapsedText').collapse('hide');
+                element.innerHTML = 'READ MORE...';
+            }
+
+
+        }
+        
     </script> 
 
 
