@@ -1,29 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple one-page online resume built with the ruby on rails framework for the backend and HTML5, Javascript, and Bootstrap for the frontend. It is developed using the Cloud9 IDE.
 
-Things you may want to cover:
+* Ruby version: 2.3
 
-* Ruby version
+* Rails version: 5.0
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
+* To start the server on Cloud9 IDE: rails server -b $IP -p $PORT
 
 
 Notes:
