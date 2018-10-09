@@ -15,7 +15,7 @@
     <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
 
     <!-- Custom Fonts -->
-    <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>-->
     <!--<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>-->
 
@@ -138,6 +138,31 @@
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
                 <div class="col-lg-6 col-sm-6">
+                    <a href="http://www.liquid.com" class="portfolio-box" target= '_blank'>
+                        <%= image_tag("ql.png", alt: "", :class  => "img-responsive") %>
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                     Japan First Regulated Crypto Exchange
+                                </div>
+                                <div class="project-name">
+
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div style="padding-left:25px;">
+                        <i class="fa fa-2x fa-laptop text-primary sr-icons"> <h3 style="display:inline-block;">Data Scientist</h3></i>
+                        <p class="text-muted">December 2017 to Present</p>
+                        <ul class="fa-ul" style="display: inline-block; text-align:left;">
+                            <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-book sr-icons" aria-hidden="true"></i> Market micro-structure analysis. </li>
+                            <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-bar-chart sr-icons" aria-hidden="true"></i> Building analytical tools such as a triangular arbitrage detector. </li>
+                            <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-laptop sr-icons" aria-hidden="true"></i> Developing a virtual exchange research purposes. Worked on market-making algorithm such as supply-demand. </li>
+                            <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-group sr-icons" aria-hidden="true"></i> Contribued to the hiring process increasing team size by 40%. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
                     <a href="http://www.sbibits.com" class="portfolio-box" target= '_blank'>
                         <%= image_tag("logobits.png", alt: "", :class  => "img-responsive ")  %>
                         <div class="portfolio-box-caption">
@@ -149,7 +174,7 @@
                         </div>
                     </a>
                     <div style="padding-left:25px;">
-                        <i class="fa fa-2x fa-laptop text-primary sr-icons"> <h3 style="display:inline-block;">Jr Developer</h3></i>
+                        <i class="fa fa-2x fa-laptop text-primary sr-icons"> <h3 style="display:inline-block;"> Developer</h3></i>
                         <p class="text-muted">January 2017 to Present (quant team)</p>
                             <ul class="fa-ul" style="display: inline-block; text-align:left;">
                             <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-bar-chart sr-icons" aria-hidden="true"></i> Running data Analysis (Python) on financial instruments to improve prop trading business.</li>
@@ -162,11 +187,6 @@
                             <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-flag sr-icons" aria-hidden="true"></i>  Some bugs that I found were so tricky that my colleagues labeled them “Italian tricks”. </li>
                             <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-group sr-icons" aria-hidden="true"></i> Volunteered  to organize Japanese classes to improve my team's as well as my own language skills. I have been running this class steadily twice a week since 2015/12.</li>
                         </ul>
-                        <i class="fa fa-2x fa-book text-primary sr-icons"> <h3 style="display:inline-block;">Publications</h3></i>
-                        <ol tyoe="1">
-                            <li style="font-size:15px; line-height:175%;">Scotti T., Mimura M., Wakano J.Y.: <%= link_to "Avoiding toxic prey may promote harmful algal blooms", "http://www.sciencedirect.com/science/article/pii/S1476945X14000877",  :target => "_blank" %> Ecological Complexity, Vol. 21, pp. 157-165, 2015. </li>
-                            <li style="font-size:15px; line-height:175%;">Ikeda H., Scotti T., Mimura M.: <%= link_to "Shadow system approach to a plankton model generating harmful algal bloom", "https://aimsciences.org/journals/displayArticlesnew.jsp?paperID=13387",  :target => "_blank" %> Discrete & Continuous Dynamical Systems Vol. 37 No. 2.</li>
-                        </ol>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6">
@@ -197,6 +217,11 @@
                             <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Spoke at several international conferences both in Japan and abroad. <%= link_to "Pop them up!", "#", data: {toggle: "modal", target: "#conferenceModal"} %>
                             <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-graduation-cap sr-icons" aria-hidden="true"></i> Published original results on peer-reviewed international scientific journals [1]. </li>
                         </ul>
+                        <i class="fa fa-2x fa-book text-primary sr-icons"> <h3 style="display:inline-block;">Publications</h3></i>
+                        <ol tyoe="1">
+                            <li style="font-size:15px; line-height:175%;">Scotti T., Mimura M., Wakano J.Y.: <%= link_to "Avoiding toxic prey may promote harmful algal blooms", "http://www.sciencedirect.com/science/article/pii/S1476945X14000877",  :target => "_blank" %> Ecological Complexity, Vol. 21, pp. 157-165, 2015. </li>
+                            <li style="font-size:15px; line-height:175%;">Ikeda H., Scotti T., Mimura M.: <%= link_to "Shadow system approach to a plankton model generating harmful algal bloom", "https://aimsciences.org/journals/displayArticlesnew.jsp?paperID=13387",  :target => "_blank" %> Discrete & Continuous Dynamical Systems Vol. 37 No. 2.</li>
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -228,16 +253,16 @@
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <!--<div class=>-->
-                    <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                    <i class="far fa-4x fa-gem text-primary sr-icons"></i>
                     <h3>Skills</h3>
                     <p class="text-muted"></p>
                     <ul class="fa-ul" style="display: inline-block; text-align:left;">
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-desktop sr-icons" aria-hidden="true"></i> <p> OS: <i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> (basic). </p></li>
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-cog fa-spin sr-icons" aria-hidden="true"></i><p> Experience with Java Spring MVC. </p></li>
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-chrome sr-icons" aria-hidden="true"></i> <p> Web: <i class="fa fa-html5" aria-hidden="true"></i> <i class="fa fa-css3" aria-hidden="true"></i>...bootstrap!</p></li>
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-database sr-icons" aria-hidden="true"></i>  <p>Some experience with PostgreSQL.</p></li>
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-pulse fa-spinner sr-icons" aria-hidden="true"></i> <p>Python, C#, Ruby on Rails. </p> </li>
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-language sr-icons" aria-hidden="true"></i>  <img alt="Italy" src="/assets/italy.png" style="width:27px;height:18px;" title="Native" /> &nbsp &nbsp
+                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-desktop sr-icons" aria-hidden="true"></i> <p> : <i class="fab fa-windows" aria-hidden="true"></i> <i class="fab fa-apple" aria-hidden="true"></i> <i class="fab fa-linux" aria-hidden="true"></i> </p></li>
+                        <li style="font-size:15px; line-height:175%;"><i class="fas fa-li fa-code sr-icons" aria-hidden="true"></i><p> : <i class="fab fa-python" aria-hidden="true"></i>  <i class="fab fa-java" aria-hidden="true"></i> <i class="fab fa-js" aria-hidden="true"></i> </i></p></li>
+                        <li style="font-size:15px; line-height:175%;"><i class="fab fa-li fa-chrome sr-icons" aria-hidden="true"></i><p> : <i class="fab fa-html5" aria-hidden="true"></i> <i class="fab fa-css3" aria-hidden="true"></i></p></li>
+                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-database sr-icons" aria-hidden="true"></i><p> : SQL, PostgreSQL.</p></li>
+                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-pulse fa-cog sr-icons" aria-hidden="true"></i><p> : <i class="fab fa-node-js" aria-hidden="true"></i> <i class="far fa-gem" aria-hidden="true"></i> </p> </li>
+                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-language sr-icons" aria-hidden="true"></i> : <img alt="Italy" src="/assets/italy.png" style="width:27px;height:18px;" title="Native" /> &nbsp &nbsp
                                                                                              <img alt="Italy" src="/assets/usa.png" style="width:27px;height:18px;"     title="Fluent" /> &nbsp &nbsp
                                                                                              <img alt="Italy" src="/assets/japan.png" style="width:27px;height:18px;" title="Advanced" /> &nbsp &nbsp
                                                                                              <img alt="Italy" src="/assets/china.png" style="width:27px;height:18px;" title="Conversational"/> </li>
@@ -265,7 +290,7 @@
                         <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-music" aria-hidden="true"></i><p>I love music in general and I have <br> been studying piano for more than 10 years.</p></li>
                         <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-hand-rock-o" aria-hidden="true"></i><p>I have been practicing martial arts since 1999.</p></li>
                         <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-book" aria-hidden="true"></i><p>Big fan of the <%= link_to "edX", "https://www.edx.org/",  :target => "_blank" %> platform. </p></li> 
-                        <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-stack-exchange" aria-hidden="true"></i><p> Do my best to contribute on <%= link_to "stack exchange", "http://stackexchange.com/",  :target => "_blank" %>, especially for the Japanese language.</p></li>
+                        <li style="font-size:15px; line-height:175%;"><i class="fab fa-li fa-stack-exchange" aria-hidden="true"></i><p> Do my best to contribute on <%= link_to "stack exchange", "http://stackexchange.com/",  :target => "_blank" %>, especially for the Japanese language.</p></li>
                         <li style="font-size:15px; line-height:175%;"><i class="fa fa-li fa-paint-brush" aria-hidden="true"></i><p>Enthusiast about calligraphy,
                             snowboard <i class="fa fa-snowflake-o" aria-hidden="true"></i>,
                             and traveling. <i class="fa fa-paper-plane" aria-hidden="true"></i></p></li>
