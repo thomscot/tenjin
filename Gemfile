@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.3.7"
+ruby "2.3.7", :patchlevel => '456'
 
 # From listing 13.72 in the tutorial railstutorial.org/book
 
