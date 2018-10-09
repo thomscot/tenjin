@@ -41,7 +41,7 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.1.4)
-    autoprefixer-rails (8.6.5)
+    autoprefixer-rails (9.1.4)
       execjs
     bcrypt (3.1.11)
     bootstrap-sass (3.3.6)
@@ -68,6 +68,7 @@ GEM
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     debug_inspector (0.0.3)
+    dry-inflector (0.1.2)
     erubis (2.7.0)
     excon (0.62.0)
     execjs (2.7.0)
@@ -118,10 +119,10 @@ GEM
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-brightbox (0.15.0)
-      fog-core (~> 1.22)
+    fog-brightbox (0.16.1)
+      dry-inflector
+      fog-core
       fog-json
-      inflecto (~> 0.0.2)
       mime-types
     fog-cloudatcost (0.1.2)
       fog-core (~> 1.36)
@@ -146,10 +147,10 @@ GEM
     fog-json (1.2.0)
       fog-core
       multi_json (~> 1.10)
-    fog-local (0.5.0)
+    fog-local (0.6.0)
       fog-core (>= 1.27, < 3.0)
-    fog-openstack (0.1.26)
-      fog-core (~> 1.45.0)
+    fog-openstack (0.3.6)
+      fog-core (>= 1.45, <= 2.1.0)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
     fog-powerdns (0.2.0)
@@ -159,7 +160,7 @@ GEM
     fog-profitbricks (4.1.1)
       fog-core (~> 1.42)
       fog-json (~> 1.0)
-    fog-rackspace (0.1.5)
+    fog-rackspace (0.1.6)
       fog-core (>= 1.35)
       fog-json (>= 1.0)
       fog-xml (>= 0.1)
@@ -193,12 +194,13 @@ GEM
     fog-voxel (0.1.0)
       fog-core
       fog-xml
-    fog-vsphere (2.2.0)
+    fog-vsphere (2.3.0)
       fog-core
       rbvmomi (~> 1.9)
-    fog-xenserver (0.3.0)
+    fog-xenserver (1.0.0)
       fog-core
       fog-xml
+      xmlrpc
     fog-xml (0.1.3)
       fog-core
       nokogiri (>= 1.5.11, < 2.0.0)
@@ -222,7 +224,6 @@ GEM
       minitest (>= 3.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    inflecto (0.0.2)
     ipaddress (0.8.3)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -242,12 +243,12 @@ GEM
     mail (2.7.0)
       mini_mime (>= 0.1.1)
     method_source (0.9.0)
-    mime-types (3.1)
+    mime-types (3.2.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
+    mime-types-data (3.2018.0812)
     mimemagic (0.3.2)
     mini_magick (4.5.1)
-    mini_mime (1.0.0)
+    mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     minitest-reporters (1.1.9)
@@ -258,7 +259,7 @@ GEM
     multi_json (1.13.1)
     nenv (0.3.0)
     nio4r (1.2.1)
-    nokogiri (1.8.4)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -307,8 +308,8 @@ GEM
       json (>= 1.8)
       nokogiri (~> 1.5)
       trollop (~> 2.1)
-    ruby-progressbar (1.9.0)
-    sass (3.5.6)
+    ruby-progressbar (1.10.0)
+    sass (3.6.0)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -335,10 +336,10 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    trollop (2.1.2)
+    trollop (2.9.9)
     turbolinks (5.0.1)
       turbolinks-source (~> 5)
-    turbolinks-source (5.1.0)
+    turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.0.0)
@@ -352,6 +353,7 @@ GEM
     websocket-extensions (0.1.3)
     will_paginate (3.1.0)
     xml-simple (1.1.5)
+    xmlrpc (0.3.0)
 
 PLATFORMS
   ruby
@@ -387,5 +389,8 @@ DEPENDENCIES
   web-console (= 3.1.1)
   will_paginate (= 3.1.0)
 
+RUBY VERSION
+   ruby 2.3.7p456
+
 BUNDLED WITH
-   1.13.6
+   1.16.6
