@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
-ruby "2.3.7", :patchlevel => '456'
+ruby "2.5.1", :patchlevel => '57'
 
 # From listing 13.72 in the tutorial railstutorial.org/book
 
-gem 'rails',                   '5.0.0.1'
+gem 'rails',                   '5.0.2'
 gem 'bcrypt',                  '3.1.11'
 gem 'faker',                   '1.6.6'
 gem 'carrierwave',             '0.11.2'
